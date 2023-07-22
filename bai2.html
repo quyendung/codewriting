@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let statues = [6, 2, 3, 8]
+
+    function solution(statues) {
+        let x = 0
+        let minStatues = Math.min(...statues)
+        let maxStatues = Math.max(...statues)
+        for (let i = minStatues; i < maxStatues; i++) {
+            if (!statues.includes(i)) {
+                x++
+            }
+        }
+        return x
+    }
+
+    document.write(solution(statues))
+</script>
+</html>
