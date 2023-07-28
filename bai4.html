@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body></body>
+    <script>
+        let matrix = [
+            [0, 1, 1, 2],
+            [0, 5, 0, 0],
+            [2, 0, 3, 3],
+        ];
+
+        function solution(matrix) {
+            let sum = 0;
+
+            for (let i = 0; i < matrix[0].length; i++) {
+                for (let j = 0; j < matrix.length; j++) {
+                    if (matrix[j][i] === 0) {
+                        break;
+                    }
+                    sum += matrix[j][i];
+                }
+            }
+
+            return sum;
+        }
+
+        console.log(solution(matrix));
+    </script>
+</html>

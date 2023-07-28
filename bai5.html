@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body></body>
+    <script>
+        let inputArray = ["aba", "aa", "ad", "vcd", "aba"];
+
+        function solution(inputArray) {
+            let outputArray = [];
+
+            let inputArrayLongest = inputArray.sort((a, b) => {
+                return b.length - a.length;
+            });
+
+            for (let i = 0; i < inputArrayLongest.length; i++) {
+                if (
+                    inputArrayLongest[i].length == inputArrayLongest[0].length
+                ) {
+                    outputArray.push(inputArrayLongest[i]);
+                }
+            }
+            return outputArray;
+        }
+
+        console.log(solution(inputArray));
+    </script>
+</html>
