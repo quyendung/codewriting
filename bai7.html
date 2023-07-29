@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body></body>
+    <script>
+        let a = [50, 60, 60, 45, 70];
+
+        solution = (a) => {
+            let teamOne = 0;
+            let teamTwo = 0;
+
+            for (let i = 0; i < a.length; i++) {
+                if (i % 2 == 0) {
+                    teamOne += a[i];
+                } else {
+                    teamTwo += a[i];
+                }
+            }
+
+            return [teamOne, teamTwo];
+        };
+
+        console.log(solution(a));
+    </script>
+</html>

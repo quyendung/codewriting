@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body></body>
+    <script>
+        let inputArray = [2, 4, 1, 0];
+
+        solution = (inputArray) => {
+            let max = 0;
+
+            for (let i = 0; i < inputArray.length; i++) {
+                let temp = Math.abs(inputArray[i] - inputArray[i + 1]);
+                
+                if (temp > max) {
+                    max = temp;
+                }
+            }
+            return max;
+        };
+
+        document.write(solution(inputArray));
+    </script>
+</html>

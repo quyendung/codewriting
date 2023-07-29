@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body></body>
+    <script>
+        let yourLeft = 10;
+        yourRight = 15;
+        friendsLeft = 15;
+        friendsRight = 10;
+
+        solution = (yourLeft, yourRight, friendsLeft, friendsRight) => {
+            return (
+                yourLeft + yourRight === friendsLeft + friendsRight &&
+                (yourLeft === friendsLeft || yourRight === friendsRight)
+            );
+        };
+
+        console.log(solution(yourLeft, yourRight, friendsLeft, friendsRight));
+    </script>
+</html>
